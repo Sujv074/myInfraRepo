@@ -1,3 +1,6 @@
+provider "aws" {
+  region = var.aws_region
+}
 data "aws_vpc" "default" {
   id = var.vpc_id
 }
